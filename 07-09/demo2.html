@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv">
+
+    </div>
+
+    <script>
+        var data = document.getElementById("mydiv");
+        var ele = document.createElement("h1");
+        // ele.innerText="Hello India"
+        // ele.innerText="Ducat"
+        var txt1 = document.createTextNode("Hello India");
+        var txt2 = document.createTextNode("Ducat");
+        ele.appendChild(txt1);
+        ele.appendChild(txt2);
+        data.appendChild(ele);
+        data.normalize();
+        console.log(data);
+
+    </script>
+</body>
+</html>

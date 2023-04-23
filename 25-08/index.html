@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var name=prompt('enter ur data');
+        // document.write("ur name is "+name);
+
+        //    var a=parseInt(prompt('enter ur f no'));
+        //    var b=parseInt(prompt('enter ur s no'));
+        //    var c=a+b;
+        //    document.write("result "+c);
+
+        var a = parseInt(prompt('Enter Your First No'));
+        var b = parseInt(prompt('Enter Your Second No'));
+        var opt = prompt('add use +\n sub use -\n multi use *\n div use /\n modulus use %\n exponent use **')
+        switch (opt) 
+        {
+            case '+':
+                document.write("add="+a + b);
+                break
+            case '-':
+                document.write("sub="+a - b);
+                break
+            case '*':
+                document.write("multi="+a * b);
+                break
+            case '/':
+                document.write("div="+a / b);
+                break
+            case '%':
+                document.write("modulus="+a % b);
+                break
+            default:
+                document.write("not valid");
+
+        }
+    </script>
+</body>
+
+</html>

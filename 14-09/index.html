@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+
+     <title>Document</title>
+</head>
+<body>
+ <img src="pic4.jfif" height="300px" width="100%" id="myimage">
+ <script>
+var data=['banner1.jfif','banner2.jfif','banner3.jfif'];
+var i=0;
+function slider(){
+document.getElementById("myimage").src=data[i];
+i++;
+if(i>2)
+{
+     i=0;
+}
+}
+setInterval(slider,1000);
+
+ </script>    
+</body>
+</html>

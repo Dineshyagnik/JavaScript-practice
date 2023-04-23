@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+<title>Document</title>
+</head>
+<body>
+   <input type="password" name="p" id="myp">
+     <button onclick="showpass()">show password</button>
+     <script>
+var result=document.getElementById("myp");
+function showpass()
+{
+     if(result.type==='password')
+     {
+          result.type="text";
+     }
+     else
+     {
+          result.type="password";
+     }
+}
+     </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+<title>Document</title>
+</head>
+<body>
+ <h2 id="myh">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus aspernatur non natus placeat quidem tempore nobis, reprehenderit veniam sequi autem.</h2>    
+
+<button id="mybtn">Stop</button>
+<script>
+     /*
+function setcolor(){
+     document.getElementById("myh").style.color="red"
+}
+setTimeout(setcolor,3000);
+*/
+
+var id=setTimeout(function setcolor(){
+     document.getElementById("myh").style.color="red"
+},3000);
+
+function clrtime(){
+     clearTimeout(id)
+}
+document.getElementById("mybtn").addEventListener("click",clrtime)
+
+</script>
+
+
+
+</body>
+</html>

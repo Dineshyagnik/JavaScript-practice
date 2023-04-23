@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+     <title>Document</title>
+     <style>
+div{height: 150px; width: 200px; border: 2px solid red;}
+     </style>
+</head>
+<body>
+    <div id="mydiv" onmousedown="fun1()" onmouseleave="fun2()" onmouseenter="fun3()"
+    onmousemove="fun4()" onmouseout="fun5()" onmouseover="fun6()" onmouseup="fun7()"
+    onmousewheel="fun8()"></div> 
+    <script>
+function fun1(){
+document.getElementById("mydiv").style.background="orange";
+console.log("onmousedown");
+}
+function fun2(){
+document.getElementById("mydiv").style.background="purple";
+console.log("onmouseleave");
+}
+function fun3(){
+document.getElementById("mydiv").style.background="grey";
+console.log("onmouseenter");
+}
+function fun4(){
+document.getElementById("mydiv").style.background="blue";
+console.log(" onmousemove");
+}
+function fun5(){
+document.getElementById("mydiv").style.background="green";
+console.log("onmouseout");
+}
+function fun6(){
+document.getElementById("mydiv").style.background="red";
+console.log("onmouseover");
+}
+function fun7(){
+document.getElementById("mydiv").style.background="yellow";
+console.log("onmouseup");
+}
+
+function fun8(){
+document.getElementById("mydiv").style.background="black";
+console.log(" onmousewheel");
+}
+
+    </script>
+</body>
+</html>

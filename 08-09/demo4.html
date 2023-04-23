@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="mybtn" onclick="data()">click me</button>
+    <script>
+        // function data(){
+        //     alert("Hello");
+        // }
+        // function data(){
+        //     alert("welcome");
+        // }
+
+        function data1()
+        {
+            alert("Hello");
+        }
+        function data2()
+        {
+            alert("welcome");
+        }
+        var result = document.getElementById("mybtn");
+        result.addEventListener("click",data1);
+        result.addEventListener("click",data2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+     <title>Document</title>
+</head>
+<body>
+   <button id="mybtn">click</button> 
+   <input type="text" name="n" value="Amit kumar" id="myinput">
+   <script>
+function show(e){
+//   console.log(e);
+// console.log(e.target);
+console.log(e.target.value);
+}
+// document.getElementById("mybtn").addEventListener("click",show)
+document.getElementById("myinput").addEventListener("keyup",show)
+
+   </script> 
+</body>
+</html>

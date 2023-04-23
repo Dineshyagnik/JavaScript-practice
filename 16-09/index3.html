@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+     <title>Document</title>
+</head>
+<body>
+     <h2>Callback function</h2>
+   <script>
+     /*
+function show(){
+     console.log("this is show function");
+}
+
+function data(callback){
+   callback()
+}
+data(show)
+*/
+
+
+/*
+function data(callback){
+   callback()
+}
+data(function show(){
+     console.log("this is show function");
+})
+*/
+/*
+function show(a){
+     console.log("this is show function",a);
+}
+
+function data(callback){
+     var a=50
+   callback(a)
+}
+data(show)
+*/
+
+// console.log("program start");
+// function show(){
+//      console.log("this is show ");
+// }
+// show()
+// console.log("program end");
+/*
+console.log("program start");
+function show(){
+     console.log("this is show ");
+}
+setTimeout(show,2000)
+console.log("program end");
+
+try{
+     show()
+     console.log("try section");
+}
+catch{
+     console.log("show not define");
+}
+finally{
+     console.log("finnaly section");
+}
+*/
+// var arr=[10,20,30,40,50,60]
+// var newArr=arr.map((item)=>{
+//  return item *5
+// })
+// console.log(newArr);
+var obj=[
+     {id:1,name:"amit",age:20},
+     {id:2,name:"sumit",age:22},
+     {id:3,name:"hari",age:23},
+     {id:4,name:"rahul",age:24}
+]
+var newArr=obj.map((item)=>{
+//   console.log(item.name);
+return item.name
+})
+console.log(newArr);
+   </script>  
+</body>
+</html>

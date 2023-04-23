@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+     <title>Document</title>
+</head>
+<body>
+   <h1 id="myh"></h1>
+   <script>
+var i=0;
+var j=0;
+function data(){
+document.getElementById("myh").innerHTML=j+":"+i;
+i++;
+if(i==60)
+{
+     i=1
+     j=j+1
+}
+}
+setInterval(data,500);
+   </script>  
+</body>
+</html>

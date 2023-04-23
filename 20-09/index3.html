@@ -1,0 +1,33 @@
+<html>
+<head>
+     <title>Document</title>
+     <style>
+          span{color: red;}
+     </style>
+</head>
+<body>
+  <form name="frm">
+     Name:
+     <input type="text" name="n" id="myinput">
+     <span id="mysapn1"></span>
+     <br>
+     Pass:
+     <input type="password" name="p" id="myp">
+  </form>
+  <button id="mybtn">submit</button> 
+  <script>
+     function validate(){
+     var data=/^[a-z]+[0-9]+$/;
+     if(data.test(document.frm.n.value))
+     {
+         document.getElementById("mysapn1").innerHTML="valid"
+     }
+     else
+     {
+          document.getElementById("mysapn1").innerHTML="not valid"
+     }
+     }
+document.getElementById("myinput").addEventListener("change",validate)
+  </script>
+</body>
+</html>

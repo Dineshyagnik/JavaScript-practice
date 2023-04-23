@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="myul">
+        <li>Home</li>
+        <li>About</li>
+        <li id="myli">News</li>
+        <li>Contact</li>
+    </ul>
+
+    <script>
+        var parent = document.getElementById("myul");
+        var ele = document.createElement("li");
+        ele.innerHTML="Ducat"
+        var ref = document.getElementById("myli");
+        var insertedNode = parent.insertBefore(ele,ref);
+        console.log(parent);
+
+
+    </script>
+</body>
+</html>

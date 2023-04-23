@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+     
+     <title>Document</title>
+</head>
+<body>
+  <h1 id="myh"></h1> 
+  <button id="mybtn">stop</button>  
+  <script>
+     /*
+     var i=1;
+function data(){
+     document.getElementById("myh").innerHTML=i;
+     i++;
+}
+setInterval(data,1000);
+*/
+var i=1;
+
+var id=setInterval(function data(){
+     document.getElementById("myh").innerHTML=i;
+     i++;
+},1000);
+
+function clrtime(){
+     clearInterval(id)
+}
+document.getElementById("mybtn").addEventListener("click",clrtime)
+  </script>
+</body>
+</html>

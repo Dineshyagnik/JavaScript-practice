@@ -1,0 +1,37 @@
+<html>
+<head>
+     <title>Document</title>
+     <style>
+          span{color: red;}
+     </style>
+</head>
+<body>
+  <form name="frm" onsubmit="return validate()">
+     Name:
+     <input type="text" name="n" id="myinput">
+     <span id="mysapn1"></span>
+     <br>
+     Pass:
+     <input type="password" name="p" id="myp">
+     <br><br>
+     <input type="submit" name="sub">
+  </form>
+ 
+  <script>
+     function validate(){
+     var data=/^[a-z]+$/;
+     if(data.test(document.frm.n.value))
+     {
+         document.getElementById("mysapn1").innerHTML="valid"
+         return false
+     }
+     else
+     {
+          document.getElementById("mysapn1").innerHTML="not valid"
+          return false
+     }
+}
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv">
+
+    </div>
+    <script>
+        var data = document.getElementById("mydiv");
+        var ele1 = document.createElement("h1");
+        var txt1 = document.createTextNode("Welcome Ducat");
+        var ele2 = document.createElement("h2");
+        var txt2 = document.createTextNode("India");
+        var ele3 = document.createElement("h3");
+        var txt3 = document.createTextNode("Hello");
+        ele1.appendChild(txt1);
+        ele2.appendChild(txt2);
+        ele3.appendChild(txt3);
+        var df = document.createDocumentFragment();
+        df.appendChild(ele1);
+        df.appendChild(ele2);
+        df.appendChild(ele3);
+        data.appendChild(df);
+       
+        console.log(data);
+
+    </script>
+</body>
+</html>

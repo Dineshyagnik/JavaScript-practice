@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+     <title>Document</title>
+     <style>
+div{padding: 10px; border: 2px solid red;}
+     </style>
+</head>
+<body>
+   <div id="a">1
+<div id="b">2
+<div id="c">3
+<div id="d">4</div>
+</div>
+</div>
+   </div> 
+   <script>
+function show1(){
+     console.log("1");
+}
+function show2(e){
+     console.log("2");
+     e.stopPropagation();
+}
+function show3(){
+     console.log("3");
+    
+
+}
+function show4(){
+     console.log("4");
+}
+document.getElementById("a").addEventListener("click",show1,true);
+document.getElementById("b").addEventListener("click",show2,true);
+document.getElementById("c").addEventListener("click",show3,true);
+document.getElementById("d").addEventListener("click",show4,true);
+   </script>
+   
+</body>
+</html>
